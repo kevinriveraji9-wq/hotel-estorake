@@ -72,7 +72,7 @@
 .it-sum{margin:0 0 24px;color:var(--ink-2)}
 .tl{position:relative;list-style:none;margin:0;padding:0}
 .tl::before{content:"";position:absolute;left:19px;top:10px;bottom:10px;width:2px;background:linear-gradient(var(--monte),var(--line))}
-.tl-day{margin:0 0 6px 56px;font:600 .76rem/1 "Schibsted Grotesk",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--balcon);padding-top:10px}
+.tl .tl-day{margin:0 0 6px 56px;font:600 .76rem/1 "Schibsted Grotesk",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--balcon);padding-top:10px}
 .tl li{position:relative;display:grid;grid-template-columns:40px minmax(0,1fr);gap:16px;padding:12px 0 20px;animation:cardIn .5s var(--ease) both;animation-delay:var(--dl,0s)}
 .tl .t-ic{width:40px;height:40px;border-radius:50%;background:var(--paper);box-shadow:0 0 0 5px var(--helecho),var(--shadow);display:grid;place-items:center;font-size:1rem}
 .tl .t-card{background:var(--paper);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow)}
@@ -140,7 +140,7 @@
 @media (max-width:900px){.builder{grid-template-columns:minmax(0,1fr)}}
 .ticket{position:sticky;top:100px;background:var(--noche);color:var(--on-dark);border-radius:22px;padding:28px;overflow:hidden}
 .ticket::after{content:"";position:absolute;right:-60px;top:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(140,196,86,.25),transparent 70%)}
-@media (max-width:900px){.ticket{position:static}}
+@media (max-width:900px){.ticket{position:relative;top:auto}}
 .tk-h{display:flex;align-items:center;justify-content:space-between;gap:12px}
 .tk-h img{height:46px;width:auto}
 .tk-h span{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--hoja);font-weight:700}

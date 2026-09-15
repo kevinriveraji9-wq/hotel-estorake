@@ -46,7 +46,7 @@
       track.appendChild(fig);
       var tb = document.createElement('button');
       tb.type = 'button'; tb.setAttribute('aria-label', (i + 1) + ' / ' + items.length);
-      tb.innerHTML = '<img src="' + it.src + '" alt="" loading="lazy">';
+      tb.innerHTML = '<img src="' + it.src + '" alt="" decoding="async">';
       tb.addEventListener('click', function () { go(i); });
       thumbs.appendChild(tb);
     });

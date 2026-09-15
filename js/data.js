@@ -3,10 +3,10 @@ window.EST = {
   phone: '573208039667',
 
   slides: [
-    { src: 'img/hero-fachada.webp', es: 'La casa', en: 'The house', alt: 'Fachada de la casa campesina con balcones de madera y jardín' },
-    { src: 'img/hero-aerea.webp', es: 'Frente al pueblo', en: 'Facing the town', alt: 'Vista aérea del hotel con el pueblo de San Agustín en la montaña' },
-    { src: 'img/hero-jardin.webp', es: 'El jardín', en: 'The garden', alt: 'Jardín con sombrilla roja, setos y la casa al fondo' },
-    { src: 'img/hero-noche.webp', es: 'De noche', en: 'At night', alt: 'La casa iluminada de noche' }
+    { src: 'img/hero-fachada.webp', pm: '64% 50%', es: 'La casa', en: 'The house', alt: 'Fachada de la casa campesina con balcones de madera y jardín' },
+    { src: 'img/hero-aerea.webp', pm: '42% 50%', es: 'Frente al pueblo', en: 'Facing the town', alt: 'Vista aérea del hotel con el pueblo de San Agustín en la montaña' },
+    { src: 'img/hero-jardin.webp', pm: '72% 50%', es: 'El jardín', en: 'The garden', alt: 'Jardín con sombrilla roja, setos y la casa al fondo' },
+    { src: 'img/hero-noche.webp', pm: '58% 50%', es: 'De noche', en: 'At night', alt: 'La casa iluminada de noche' }
   ],
 
   rooms: {

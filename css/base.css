@@ -27,7 +27,7 @@
 html{scroll-behavior:smooth;scroll-padding-top:84px}
 body{margin:0;background:var(--cal);color:var(--ink);font:400 16px/1.6 "Schibsted Grotesk","Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 body.lock{overflow:hidden}
-img{max-width:100%;display:block}
+img{max-width:100%;height:auto;display:block}
 a{color:var(--monte)}
 button{font:inherit;color:inherit}
 :focus-visible{outline:3px solid var(--hoja);outline-offset:2px}

@@ -139,6 +139,7 @@
     if (i > 0) {
       var f = document.createElement('figure'); f.className = 'slide';
       f.innerHTML = '<img src="' + sl.src + '" alt="" decoding="async" loading="lazy">';
+      f.style.setProperty('--pm', sl.pm);
       slidesEl.appendChild(f);
     }
     var b = document.createElement('button');
@@ -165,6 +166,19 @@
   document.addEventListener('visibilitychange', function () { if (document.hidden) clearInterval(timer); else restart(); });
   A.on(function () { cap.textContent = D.slides[cur][A.lang]; });
   go(0); restart();
+
+  /* ---------- en celular la reserva va debajo de la foto ---------- */
+  var bkHost = $('#bkHost'), stats = $('.stats'), slideUi = $('.slide-ui'), mBookIn = $('#mBookIn'), heroIn = $('.hero-in');
+  var mqBook = window.matchMedia('(max-width: 760px)');
+  function placeBook() {
+    if (mqBook.matches) {
+      if (bkHost.parentNode !== mBookIn) { mBookIn.appendChild(bkHost); mBookIn.appendChild(stats); }
+    } else if (bkHost.parentNode !== heroIn) {
+      heroIn.insertBefore(bkHost, slideUi); slideUi.insertBefore(stats, slideUi.firstChild);
+    }
+  }
+  placeBook();
+  if (mqBook.addEventListener) mqBook.addEventListener('change', placeBook); else mqBook.addListener(placeBook);
 
   /* ---------- popovers (calendario y huéspedes) ---------- */
   var cal = $('#cal'), gp = $('#gp'), scrim = $('#scrim'), openTrigger = null, calField = 'in';
