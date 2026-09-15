@@ -88,8 +88,8 @@ window.EST = {
     1: [
       { day: 1, t: 'am', es: ['Parque Arqueológico', 'Sal caminando después del desayuno. Recorre las mesitas, la Fuente de Lavapatas y el Bosque de las Estatuas.', 'A pie · 15 min'],
         en: ['Archaeological Park', 'Walk over after breakfast. See the burial mounds, the Lavapatas Fountain and the Forest of Statues.', 'On foot · 15 min'] },
-      { day: 1, t: 'pm', es: ['La Chaquira a caballo', 'Cabalgata por las veredas hasta el mirador sobre el cañón del Magdalena.', 'A caballo · medio día'],
-        en: ['La Chaquira on horseback', 'Ride along country lanes to the viewpoint over the Magdalena canyon.', 'On horseback · half day'] },
+      { day: 1, t: 'pm', es: ['Mirador de La Chaquira', 'Mirador sobre el cañón del Magdalena, con figuras talladas en la roca.', 'Medio día'],
+        en: ['La Chaquira viewpoint', 'A viewpoint over the Magdalena canyon, with figures carved into the rock.', 'Half day'] },
       { day: 1, t: 'ev', es: ['Cena en el pueblo', 'Baja caminando al centro de San Agustín y vuelve a descansar en la casa.', 'A pie · 10 min'],
         en: ['Dinner in town', 'Walk down to the centre of San Agustín and come back to rest at the house.', 'On foot · 10 min'] }
     ],
@@ -104,8 +104,8 @@ window.EST = {
     3: [
       { day: 3, t: 'am', es: ['Estrecho del Magdalena', 'El río más largo de Colombia pasando entre rocas en su punto más angosto.', 'En carro · medio día'],
         en: ['Magdalena Strait', 'Colombia’s longest river squeezing between rocks at its narrowest point.', 'By car · half day'] },
-      { day: 3, t: 'pm', es: ['La Pelota y El Purutal', 'Estatuas que todavía conservan su color, a pocos kilómetros de la casa.', 'A caballo o en carro'],
-        en: ['La Pelota and El Purutal', 'Statues that still keep their colour, a few kilometres from the house.', 'On horseback or by car'] },
+      { day: 3, t: 'pm', es: ['La Pelota y El Purutal', 'Estatuas que todavía conservan su color, a pocos kilómetros de la casa.', 'Medio día'],
+        en: ['La Pelota and El Purutal', 'Statues that still keep their colour, a few kilometres from the house.', 'Half day'] },
       { day: 3, t: 'ev', es: ['Última noche en la casa', 'Hamaca en el corredor y descanso antes de seguir el viaje.', 'En el hotel'],
         en: ['Last night at the house', 'A hammock on the veranda and a rest before moving on.', 'At the hotel'] }
     ]
@@ -129,8 +129,8 @@ window.EST = {
       bookThis: 'Reservar esta habitación', beds: 'Camas', size: 'Tamaño', view: 'Vista', photos: 'fotos',
       itinSum: function (d) { return d === 1 ? 'Un día bien aprovechado, sin carro.' : d === 2 ? 'Lo esencial de San Agustín e Isnos.' : 'El recorrido completo, con tiempo para descansar.'; },
       day: 'Día', am: 'Mañana', pm: 'Tarde', ev: 'Noche',
-      itinWa: function (d) { return 'Hola, quiero armar un plan de ' + d + (d === 1 ? ' día' : ' días') + ' en San Agustín con Estorake:'; },
-      itinClose: '¿Me ayudan con guías y disponibilidad?',
+      itinWa: function (d) { return 'Hola, quiero ayuda para armar un plan de ' + d + (d === 1 ? ' día' : ' días') + ' en San Agustín:'; },
+      itinClose: '¿Me pueden ayudar a contactar guías o transporte?',
       wxNow: 'Ahora en San Agustín', loc: 'es-CO',
       wx: { 0: 'Despejado', 1: 'Casi despejado', 2: 'Parcialmente nublado', 3: 'Nublado', 45: 'Neblina', 48: 'Neblina', 51: 'Llovizna', 53: 'Llovizna', 55: 'Llovizna', 61: 'Lluvia suave', 63: 'Lluvia', 65: 'Lluvia fuerte', 80: 'Chubascos', 81: 'Chubascos', 82: 'Chubascos fuertes', 95: 'Tormenta' }
     },
@@ -151,8 +151,8 @@ window.EST = {
       bookThis: 'Book this room', beds: 'Beds', size: 'Size', view: 'View', photos: 'photos',
       itinSum: function (d) { return d === 1 ? 'One well-used day, no car needed.' : d === 2 ? 'The essentials of San Agustín and Isnos.' : 'The full route, with time to rest.'; },
       day: 'Day', am: 'Morning', pm: 'Afternoon', ev: 'Evening',
-      itinWa: function (d) { return 'Hi, I’d like to plan ' + d + (d === 1 ? ' day' : ' days') + ' in San Agustín with Estorake:'; },
-      itinClose: 'Could you help with guides and availability?',
+      itinWa: function (d) { return 'Hi, I’d like help planning ' + d + (d === 1 ? ' day' : ' days') + ' in San Agustín:'; },
+      itinClose: 'Could you help me contact guides or transport?',
       wxNow: 'Now in San Agustín', loc: 'en-US',
       wx: { 0: 'Clear', 1: 'Mostly clear', 2: 'Partly cloudy', 3: 'Cloudy', 45: 'Fog', 48: 'Fog', 51: 'Drizzle', 53: 'Drizzle', 55: 'Drizzle', 61: 'Light rain', 63: 'Rain', 65: 'Heavy rain', 80: 'Showers', 81: 'Showers', 82: 'Heavy showers', 95: 'Thunderstorm' }
     }

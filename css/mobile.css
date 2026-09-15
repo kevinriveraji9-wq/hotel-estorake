@@ -139,6 +139,7 @@ html,body{overflow-x:clip}
   .ticket hr{margin:18px -22px 6px}
   .form .two{grid-template-columns:minmax(0,1fr);gap:0}
   .toggles{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .toggles label:first-child{grid-column:1 / -1}
   .toggles span{width:100%;height:100%;justify-content:center;text-align:center;min-height:48px;padding:8px 10px;font-size:.84rem;line-height:1.25;border-radius:14px}
   .toggles span::before{flex:none}
 
