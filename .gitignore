@@ -1,0 +1,7 @@
+# salida del build y config local de Vercel
+public/
+.vercel/
+
+# material de trabajo (no se publica)
+fotos/
+brand/
