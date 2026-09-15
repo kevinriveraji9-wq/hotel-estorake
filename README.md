@@ -2,7 +2,7 @@
 
 Propuesta de sitio web para el Hotel Campestre Estorake (Calle 5 #23-88, vía al Parque Arqueológico, San Agustín, Huila).
 
-Página estática: `index.html` + fotos y logo en `img/`. El build (`build.sh`) copia los archivos a `public/`, que es lo que publica Vercel (`vercel.json`).
+Página estática: `index.html`, estilos en `css/`, scripts en `js/` (`data.js` tiene habitaciones, galería e itinerario; `i18n.js` los textos en inglés) y fotos en `img/` (galerías en `img/g/`). El build (`build.sh`) copia los archivos a `public/`, que es lo que publica Vercel (`vercel.json`).
 
 ## Pendiente antes de producción
 - Tarifas oficiales por habitación y temporada (las actuales son las de referencia de Booking).
